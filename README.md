@@ -1,4 +1,4 @@
-#Setup
+# Setup
 - Install JDK 11 (Modify the PATH and JAVA_HOME variable)
 - Install maven (add the bin folder to the PATH variable)
 
