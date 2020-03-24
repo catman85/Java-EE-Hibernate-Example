@@ -1,9 +1,10 @@
 package com.jimmy;
 
-/**
+/*
  * Hello world!
  *
  */
+
 import java.util.List;
 
 
@@ -24,19 +25,24 @@ public class App {
         Department department = new Department("java");
         session.save(department);
 
-        session.save(new Employee("Jakab Gipsz",department));
-        session.save(new Employee("Captain Nemo",department));
+        session.save(new Employee("Jakab Gipsz", department));
+        session.save(new Employee("Captain Nemo", department));
 
         session.getTransaction().commit();
 
         Query q = session.createQuery("From Employee ");
-
         List<Employee> resultList = q.list();
+
+        Employee e = (Employee) session.get(Employee.class, (long) 2);
+        System.out.printf("First Employees name: %s\n", e.getName());
+
+
         System.out.println("num of employess:" + resultList.size());
         for (Employee next : resultList) {
-            System.out.println("next employee: " + next);
+            System.out.println("next employee: " + next.toString());
         }
-
+        session.close();
+        HibernateUtil.shutdown();
     }
 
 }

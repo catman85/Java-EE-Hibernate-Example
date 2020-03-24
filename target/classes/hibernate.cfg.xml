@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
     <session-factory>
 
@@ -9,6 +8,7 @@
         <property name="connection.username">user</property>
         <property name="connection.password">password</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- hold ctrl and click on dialect to see al the available dialects -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <property name="show_sql">true</property>

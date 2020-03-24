@@ -1,6 +1,10 @@
 package com.jimmy.Entities;
 
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +12,9 @@ import javax.persistence.*;
 
 @Entity
 @Table
+@Getter
+@Setter
+@ToString
 public class Department {
 
     @Id
@@ -25,23 +32,5 @@ public class Department {
     }
     public Department(String name) {
         this.name = name;
-    }
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public List<Employee> getEmployees() {
-        return employees;
-    }
-    public void setEmployees(List<Employee> employees) {
-        this.employees = employees;
     }
 }
