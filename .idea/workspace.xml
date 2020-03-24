@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00058a21-1780-4c1a-9ffa-3b64dd76010b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HibernateExample.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HibernateExample.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jimmy/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jimmy/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jimmy/Entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jimmy/Entities/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jimmy/Entities/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jimmy/Entities/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jimmy/Entities/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jimmy/Entities/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jimmy/Entities/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jimmy/Entities/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +31,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -124,10 +114,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1237" height="369" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1585082235951" />
-    <state x="69" y="0" key="SettingsEditor" timestamp="1585081889949">
+    <state x="69" y="0" key="SettingsEditor" timestamp="1585083916234">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="69" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1585081889949" />
+    <state x="69" y="0" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1585083916234" />
     <state x="337" y="184" key="com.intellij.ide.util.TipDialog" timestamp="1585081487918">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
