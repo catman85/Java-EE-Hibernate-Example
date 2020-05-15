@@ -11,9 +11,10 @@
         <!-- hold ctrl and click on dialect to see al the available dialects -->
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
-        <property name="show_sql">true</property>
+        <!--useful for debugging-->
+        <property name="show_sql">false</property>
 
-        <property name="format_sql">true</property>
+        <property name="format_sql">false</property>
         <!--the create property rebuilds the db from the beginning everytime-->
         <!--update appends -->
         <property name="hbm2ddl.auto">create</property>

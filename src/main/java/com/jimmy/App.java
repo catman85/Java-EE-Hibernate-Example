@@ -6,6 +6,7 @@ package com.jimmy;
  */
 
 import java.util.List;
+import java.util.logging.Level;
 
 
 import com.jimmy.Entities.Employee;
@@ -17,6 +18,8 @@ import org.hibernate.*;
 public class App {
 
     public static void main(String[] args) {
+        java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.SEVERE);
+
         Runnable func = () -> {
             System.out.println("whatever");
         };
