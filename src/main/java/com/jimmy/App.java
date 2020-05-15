@@ -17,6 +17,11 @@ import org.hibernate.*;
 public class App {
 
     public static void main(String[] args) {
+        Runnable func = () -> {
+            System.out.println("whatever");
+        };
+
+        func.run();
 
         Session session = HibernateUtil.getSessionFactory().openSession();
         session.beginTransaction();
@@ -37,12 +42,15 @@ public class App {
 
         for (Employee next : resultList) {
             System.out.println("next employee: " + next.toString());
+            System.out.println("Department name:" + next.getDepartment().getName());
         }
 
         //---END---//
         session.getTransaction().commit();
         session.close();
         HibernateUtil.shutdown();
+
+
     }
 
 }
