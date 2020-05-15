@@ -18,15 +18,15 @@ import org.hibernate.*;
 public class App {
 
     public static void main(String[] args) {
-        java.util.logging.Logger.getLogger("org.hibernate").setLevel(Level.SEVERE);
-
         Runnable func = () -> {
             System.out.println("whatever");
         };
-
         func.run();
 
+
+        HibernateUtil.setLoggingLevel(Level.SEVERE);
         Session session = HibernateUtil.getSessionFactory().openSession();
+
         session.beginTransaction();
         //---TRANSACTION--//
         Department department = new Department("java");
@@ -52,8 +52,5 @@ public class App {
         session.getTransaction().commit();
         session.close();
         HibernateUtil.shutdown();
-
-
     }
-
 }

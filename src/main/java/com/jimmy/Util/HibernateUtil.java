@@ -3,9 +3,14 @@ package com.jimmy.Util;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-public class HibernateUtil {
+import java.util.logging.Level;
 
-    private static final SessionFactory sessionFactory = buildSessionFactory();
+public class HibernateUtil {
+    private static SessionFactory sessionFactory = null;
+
+    private HibernateUtil(){
+        sessionFactory = buildSessionFactory();
+    }
 
     private static SessionFactory buildSessionFactory() {
         try {
@@ -19,6 +24,9 @@ public class HibernateUtil {
     }
 
     public static SessionFactory getSessionFactory() {
+        if(sessionFactory == null){
+            new HibernateUtil();
+        }
         return sessionFactory;
     }
 
@@ -27,4 +35,7 @@ public class HibernateUtil {
         getSessionFactory().close();
     }
 
+    public static void setLoggingLevel(Level l){
+        java.util.logging.Logger.getLogger("org.hibernate").setLevel(l);
+    }
 }
