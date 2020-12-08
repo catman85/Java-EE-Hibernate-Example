@@ -1,6 +1,9 @@
 # idea workspace
 .idea/workspace.xml
 
+# output
+target/
+
 # Compiled class file
 *.class
 
